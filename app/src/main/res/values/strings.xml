@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">History App (Finalised)</string>
+    <string name="generate_history">Generate History</string>
+    <string name="clear">Clear</string>
+    <string name="age">age</string>
+    <string name="todo">TODO</string>
+    <string name="enter_age">Enter Age:</string>
+    <string name="historical_figure">historical figure</string>
+</resources>
