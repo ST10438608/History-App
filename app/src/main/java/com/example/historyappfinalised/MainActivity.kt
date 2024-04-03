@@ -18,18 +18,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
+        //Declaration of variables. There are 4 main ones being used, an input and an output, and two buttons.
         val user_age = findViewById<EditText>(R.id.editTextNumber)
         val historical_data = findViewById<TextView>(R.id.textView2)
         val generate = findViewById<Button>(R.id.button)
         val clear = findViewById<Button>(R.id.button2)
 
-
+        //This is so the textview and the imageview (text bubble) aren't visible from the start which would obstruct the view.
         val text_bubble = findViewById<ImageView>(R.id.imageView)
         historical_data.setVisibility(View.INVISIBLE)
         text_bubble.setVisibility(View.INVISIBLE)
 
-
+        //This is where the generate button is coded.
         generate?.setOnClickListener {
 
             //Setting the user_age variable equal to a new variable so I don't have to change it to int type each time.
