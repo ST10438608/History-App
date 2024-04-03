@@ -108,6 +108,18 @@ class MainActivity : AppCompatActivity() {
                 historical_data.setVisibility(View.VISIBLE)
                 result = "There is no historical data for this age."
             }
+            //Error handling for if the user enters a number that is out of range.
+            if (age < 20 || age > 100 ) {
+                historical_data.text = "Age is out of range. Number must be between 20 and 100"
+            } else {
+                historical_data.text = result
+            }
+
+            //Coding for the clear button. It simply makes the textview invisible.
+            clear?.setOnClickListener {
+                text_bubble.setVisibility(View.INVISIBLE)
+                historical_data.setVisibility(View.INVISIBLE)
+            }
         }
     }
 }
